@@ -379,36 +379,53 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="button-close" data-modal-close>
-                <svg class=btn-close>
+                <svg class=btn-close-icon>
                     <use href='./images/icons.svg#close-black'></use>
                 </svg>
             </button>
             <form class="order">
                 <p class="order-text">Оставьте свои данные, мы вам перезвоним</p>
                 <div class="order-data">
-                    <label class="order-label">
-                    Имя
-                    <input type="text" name="client-name">
+                <label class="order-label">
+                    <span class="order-label-name">Имя</span>
+                    <span class="order-input-wrapper">
+                    <input type="text" name="client-name" class="order-input">
+                    <svg class="order-icons">
+                        <use href="./images/icons.svg#person-black"></use>
+                    </svg>
+                    </span>
                 </label>
                 <label class="order-label">
-                    Телефон
-                    <input type="tel" name="client-tel">
+                    <span class="order-label-name">Телефон</span>
+                    <span class="order-input-wrapper">
+                        <input type="tel" name="client-tel" class="order-input">
+                    <svg class="order-icons">
+                        <use href="./images/icons.svg#phone-black"></use>
+                    </svg>
+                    </span>
                 </label>
                 <label class="order-label">
-                    Почта
-                    <input type="email" name="client-email">
+                    <span class="order-label-name">Почта</span>
+                    <span class="order-input-wrapper">
+                    <input type="email" name="client-email" class="order-input">
+                    <svg class="order-icons">
+                        <use href="./images/icons.svg#email-black"></use>
+                    </svg>
+                </span>
                 </label>
                 <label class="order-label">
-                    Комментарий
-                    <textarea name="client-feedback" rows="10" placeholder="Введите текст"></textarea>
+                    <span class="order-label-name">Комментарий</span>
+                    <textarea name="client-feedback" rows="10" placeholder="Введите текст" class="order-input feedback"></textarea>
                 </label>
             </div>
                 
                 <label class="order-agreement">
-                    <input type="checkbox" name="agreement">
-                    Соглашаюсь с рассылкой и принимаю Условия договора
+                    <input type="checkbox" name="agreement" class="checkbox">
+                    <span class="check-icon"></span>
+                    Соглашаюсь с рассылкой и принимаю&#160;
+                   <a href="" class="agreement-link">Условия договора</a> 
                 </label>
-                <button type="submit">Отправить</button>
+                <button type="submit" class="modal-button">Отправить</button>
             </form>
         </div>
     </div>
