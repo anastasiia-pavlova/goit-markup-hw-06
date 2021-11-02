@@ -809,6 +809,14 @@ img {
   height: 15px;
   border: 2px solid var(--main-text-color);
   border-radius: 4px;
+  cursor: pointer;
+  transition: border-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.order-agreement:focus-within .check-icon,
+.order-agreement:hover .check-icon {
+  border-color: var(--complementary-accent-color);
 }
 
 .checkbox {
