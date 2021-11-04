@@ -787,11 +787,13 @@ img {
   color: var(--feedback-text-color);
 }
 
-.order-input:focus {
+.order-input:focus,
+.order-input:hover {
   border-color: var(--complementary-accent-color);
 }
 
-.order-input:focus + .order-icons {
+.order-input:focus + .order-icons,
+.order-input:hover + .order-icons {
   fill: var(--complementary-accent-color);
 }
 
